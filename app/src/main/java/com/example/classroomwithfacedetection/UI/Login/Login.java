@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.classroomwithfacedetection.R;
-import com.example.classroomwithfacedetection.UI.Home.Home;
-import com.example.classroomwithfacedetection.Untils.Constants;
+import com.ak.aimlforandroid.R;
+import com.ak.aimlforandroid.UI.HOME.Home;
+import com.ak.aimlforandroid.UI.ResetPassWord.ResetPassWord;
+import com.ak.aimlforandroid.UI.SIGNUP.Signup;
+import com.ak.aimlforandroid.Untils.Constants;
+import com.ak.aimlforandroid.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -61,4 +64,5 @@ public class Login extends AppCompatActivity {
         });
 
     }
+
 }
