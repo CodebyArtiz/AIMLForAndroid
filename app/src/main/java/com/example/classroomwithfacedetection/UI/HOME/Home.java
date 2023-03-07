@@ -1,4 +1,4 @@
-package com.example.classroomwithfacedetection.UI.Home;
+package com.example.classroomwithfacedetection.UI.HOME;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.example.classroomwithfacedetection.DataRecive;
 import com.example.classroomwithfacedetection.R;
+import com.example.classroomwithfacedetection.UI.Classroom.ClassroomDetail;
+import com.example.classroomwithfacedetection.UI.HOME.Adapter.CLassroomAdapter;
 import com.example.classroomwithfacedetection.UI.Models.Classroom;
 import com.example.classroomwithfacedetection.UI.Models.User;
 import com.example.classroomwithfacedetection.Untils.Constants;

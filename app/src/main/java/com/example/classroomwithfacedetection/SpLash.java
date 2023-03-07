@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.classroomwithfacedetection.UI.Home.Home;
+import com.example.classroomwithfacedetection.UI.HOME.Home;
 import com.example.classroomwithfacedetection.UI.Login.Login;
 import com.google.android.gms.common.internal.Constants;
 

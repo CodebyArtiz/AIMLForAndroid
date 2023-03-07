@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.classroomwithfacedetection.R;
-import com.example.classroomwithfacedetection.UI.Home.Home;
+import com.example.classroomwithfacedetection.UI.HOME.Home;
 import com.example.classroomwithfacedetection.UI.SIGNUP.ResetPassWord.Models.User;
 import com.example.classroomwithfacedetection.Untils.Constants;
 import com.example.classroomwithfacedetection.databinding.ActivitySignupBinding;
