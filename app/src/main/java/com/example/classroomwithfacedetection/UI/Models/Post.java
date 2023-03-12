@@ -1,6 +1,6 @@
 package com.example.classroomwithfacedetection.UI.Models;
 
-import com.ak.aimlforandroid.Untils.Untils;
+import com.example.classroomwithfacedetection.Untils.Untils;
 
 import java.util.Date;
 
