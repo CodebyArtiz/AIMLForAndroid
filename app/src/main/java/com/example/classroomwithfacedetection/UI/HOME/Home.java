@@ -1,5 +1,6 @@
 package com.example.classroomwithfacedetection.UI.HOME;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,15 +15,19 @@ import android.widget.TextView;
 
 import com.example.classroomwithfacedetection.DataRecive;
 import com.example.classroomwithfacedetection.R;
+import com.example.classroomwithfacedetection.UI.AddClass.AddClass;
 import com.example.classroomwithfacedetection.UI.Classroom.ClassroomDetail;
 import com.example.classroomwithfacedetection.UI.HOME.Adapter.CLassroomAdapter;
+import com.example.classroomwithfacedetection.UI.JoinClassroom.JoinClassroom;
 import com.example.classroomwithfacedetection.UI.Models.Classroom;
 import com.example.classroomwithfacedetection.UI.Models.User;
+import com.example.classroomwithfacedetection.UI.PROFILE.PROFILE;
 import com.example.classroomwithfacedetection.Untils.Constants;
-import com.example.classroomwithfacedetection.Untils.DbUntils;
 import com.example.classroomwithfacedetection.Untils.Untils;
 import com.example.classroomwithfacedetection.databinding.ActivityHomeBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -128,14 +133,37 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        DbUntils.getListClass(new DataRecive.Classroom.List(){
-
-            @Override
-            public void Classroom(ArrayList<Classroom> classrooms) {
-                classroomArrayList.clear();
-                classroomArrayList.addAll(classrooms);
-                adapter.notifyDataSetChanged();
-            }
-        });
+        ArrayList<String> classId = new ArrayList<>();
+        ArrayList<Classroom> classrooms = new ArrayList<>();
+        Constants.USER_DB.child(Constants.AUTH.getCurrentUser().getUid())
+                .child(Constants.CLASS_LIST)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DataSnapshot> task) {
+                        if (task.isComplete()) {
+                            for (DataSnapshot data : task.getResult().getChildren()) {
+                                classId.add(data.getKey());
+                            }
+                            Constants.CLASSROOM_DB.get()
+                                    .addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<DataSnapshot> task) {
+                                            if (task.isComplete()) {
+                                                for (DataSnapshot dataSnapshot : task.getResult().getChildren()) {
+                                                    Classroom classroom = dataSnapshot.getValue(Classroom.class);
+                                                    if (classId.contains(classroom.getId())) {
+                                                        classrooms.add(classroom);
+                                                    }
+                                                }
+                                                classroomArrayList.clear();
+                                                classroomArrayList.addAll(classrooms);
+                                                adapter.notifyDataSetChanged();
+                                            }
+                                        }
+                                    });
+                        }
+                    }
+                });
     }
 }

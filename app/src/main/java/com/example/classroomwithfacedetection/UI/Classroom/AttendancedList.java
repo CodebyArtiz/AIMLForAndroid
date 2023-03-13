@@ -8,8 +8,9 @@ import android.widget.ArrayAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.ak.aimlforandroid.Untils.Constants;
-import com.ak.aimlforandroid.databinding.ActivityAttendancedListBinding;
+
+import com.example.classroomwithfacedetection.Untils.Constants;
+import com.example.classroomwithfacedetection.databinding.ActivityAttendancedListBinding;
 import com.google.firebase.database.DataSnapshot;
 
 import java.util.ArrayList;

@@ -7,9 +7,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.ak.aimlforandroid.UI.SIGNUP.ResetPassWord.Models.Post;
-import com.ak.aimlforandroid.Untils.Constants;
-import com.ak.aimlforandroid.databinding.ActivityAddPostBinding;
+import com.example.classroomwithfacedetection.UI.Models.Post;
+import com.example.classroomwithfacedetection.Untils.Constants;
+import com.example.classroomwithfacedetection.databinding.ActivityAddPostBinding;
+
 
 public class AddPost extends AppCompatActivity {
 

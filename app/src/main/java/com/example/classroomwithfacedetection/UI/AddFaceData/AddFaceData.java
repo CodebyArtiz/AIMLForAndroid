@@ -12,6 +12,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.classroomwithfacedetection.Untils.Constants;
+import com.example.classroomwithfacedetection.Untils.FaceModel;
+import com.example.classroomwithfacedetection.Untils.Untils;
+import com.example.classroomwithfacedetection.databinding.ActivityAddFaceDataBinding;
+import com.google.mlkit.vision.common.InputImage;
+import com.google.mlkit.vision.face.FaceDetection;
+import com.google.mlkit.vision.face.FaceDetector;
+import com.google.mlkit.vision.face.FaceDetectorOptions;
+
 import java.io.IOException;
 import java.nio.MappedByteBuffer;
 

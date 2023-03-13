@@ -8,8 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ak.aimlforandroid.UI.SIGNUP.ResetPassWord.Models.User;
-import com.ak.aimlforandroid.databinding.ItemUBinding;
+
+import com.example.classroomwithfacedetection.UI.Models.User;
+import com.example.classroomwithfacedetection.databinding.ItemUBinding;
 
 import java.util.ArrayList;
 
