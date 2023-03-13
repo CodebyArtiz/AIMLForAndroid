@@ -12,8 +12,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.classroomwithfacedetection.R;
-import com.example.classroomwithfacedetection.UI.SIGNUP.ResetPassWord.Models.AttendanceRoom;
-import com.example.classroomwithfacedetection.UI.SIGNUP.ResetPassWord.Models.Classroom;
+import com.example.classroomwithfacedetection.UI.Models.AttendanceRoom;
+import com.example.classroomwithfacedetection.UI.Models.Classroom;
 import com.example.classroomwithfacedetection.Untils.Constants;
 import com.example.classroomwithfacedetection.databinding.ActivityCreateAttendanceBinding;
 import com.google.android.gms.tasks.OnSuccessListener;

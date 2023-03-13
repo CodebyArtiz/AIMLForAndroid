@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.classroomwithfacedetection.Untils.Constants;
-import com.ak.aimlforandroid.databinding.ActivityResetPassWordBinding;
+import com.example.classroomwithfacedetection.databinding.ActivityResetPassWordBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 

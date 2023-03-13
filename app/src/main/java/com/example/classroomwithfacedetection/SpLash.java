@@ -7,11 +7,11 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.classroomwithfacedetection.UI.HOME.Home;
-import com.example.classroomwithfacedetection.UI.Login.Login;
-import com.google.android.gms.common.internal.Constants;
+import com.example.classroomwithfacedetection.UI.LOGIN.Login;
+import com.example.classroomwithfacedetection.Untils.Constants;
+
 
 public class SpLash extends AppCompatActivity {
-
     private static final long DELAY_TIME = 1000;
 
     @Override

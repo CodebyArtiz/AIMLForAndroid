@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.classroomwithfacedetection.DataRecive;
 import com.example.classroomwithfacedetection.R;
 import com.example.classroomwithfacedetection.UI.AddClass.AddClass;
 import com.example.classroomwithfacedetection.UI.Classroom.ClassroomDetail;

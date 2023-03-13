@@ -13,7 +13,7 @@ public class Constants {
     public static final int TEACHER = 1;
 
     public static final FirebaseAuth AUTH = FirebaseAuth.getInstance();
-    public static final FirebaseDatabase DATABASE = FirebaseDatabase.getInstance("https://console.firebase.google.com/u/0/project/classroomwithfacedetecti-b2148/");
+    public static final FirebaseDatabase DATABASE = FirebaseDatabase.getInstance("https://aiml-96dbb-default-rtdb.asia-southeast1.firebasedatabase.app/");
     public static final String CLASS_LIST = "CLASS_LIST";
     public static final String ATTEN_ROOM = "ATTENDANCE";
     public static final String ATTENDANCED = "ATTENDANCED";

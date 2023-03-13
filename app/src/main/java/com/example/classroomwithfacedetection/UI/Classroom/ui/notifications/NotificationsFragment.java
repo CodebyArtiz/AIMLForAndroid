@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.ak.aimlforandroid.databinding.FragmentNotificationsBinding;
+import com.example.classroomwithfacedetection.databinding.FragmentNotificationsBinding;
 
 
 public class NotificationsFragment extends Fragment {

@@ -19,10 +19,11 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ak.aimlforandroid.UI.Classroom.adapter.ListUAdapter;
-import com.ak.aimlforandroid.UI.SIGNUP.ResetPassWord.Models.User;
-import com.ak.aimlforandroid.Untils.Constants;
-import com.ak.aimlforandroid.databinding.ActivityStudentListBinding;
+
+import com.example.classroomwithfacedetection.UI.Classroom.adapter.ListUAdapter;
+import com.example.classroomwithfacedetection.UI.Models.User;
+import com.example.classroomwithfacedetection.Untils.Constants;
+import com.example.classroomwithfacedetection.databinding.ActivityStudentListBinding;
 import com.google.firebase.database.DataSnapshot;
 
 import java.io.IOException;

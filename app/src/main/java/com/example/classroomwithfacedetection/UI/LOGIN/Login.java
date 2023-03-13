@@ -1,4 +1,4 @@
-package com.example.classroomwithfacedetection.UI.Login;
+package com.example.classroomwithfacedetection.UI.LOGIN;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,12 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.ak.aimlforandroid.R;
-import com.ak.aimlforandroid.UI.HOME.Home;
-import com.ak.aimlforandroid.UI.ResetPassWord.ResetPassWord;
-import com.ak.aimlforandroid.UI.SIGNUP.Signup;
-import com.ak.aimlforandroid.Untils.Constants;
-import com.ak.aimlforandroid.databinding.ActivityLoginBinding;
+
+import com.example.classroomwithfacedetection.R;
+import com.example.classroomwithfacedetection.UI.HOME.Home;
+import com.example.classroomwithfacedetection.UI.ResetPassWord.ResetPassWord;
+import com.example.classroomwithfacedetection.UI.SIGNUP.Signup;
+import com.example.classroomwithfacedetection.Untils.Constants;
+import com.example.classroomwithfacedetection.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;

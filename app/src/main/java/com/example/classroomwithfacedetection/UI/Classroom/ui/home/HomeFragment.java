@@ -10,10 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.ak.aimlforandroid.UI.Classroom.ClassroomDetail;
-import com.ak.aimlforandroid.UI.SIGNUP.ResetPassWord.Models.Post;
-import com.ak.aimlforandroid.Untils.Constants;
-import com.ak.aimlforandroid.databinding.FragmentHomeBinding;
+
+import com.example.classroomwithfacedetection.UI.Classroom.ClassroomDetail;
+import com.example.classroomwithfacedetection.UI.Models.Post;
+import com.example.classroomwithfacedetection.Untils.Constants;
+import com.example.classroomwithfacedetection.databinding.FragmentHomeBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
