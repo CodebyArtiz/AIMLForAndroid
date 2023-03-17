@@ -114,7 +114,7 @@ public class Untils {
 
     public static void setImage(String url, ImageView target){
         Picasso.get()
-                .load(url == null ? "android.resource://com.ak.aimlforandroid/drawable/profile" : url)
+                .load(url == null ? "android.resource://com.ak.example.classroomwithfacedetection/drawable/profile" : url)
                 .into(target);
     }
 
